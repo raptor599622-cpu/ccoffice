@@ -1,0 +1,144 @@
+/* ---------- ALL TYPE ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #1f2f45;
+}
+
+/* ---------- GAMBAR + JUDUL HP ---------- */
+.whitebox {
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.regisbox {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  background: white;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 24px;
+}
+
+.gambar1 {
+  padding: 60px 10px 30px;
+  width: 50%;
+  max-width: 300px;
+  margin-bottom: 16px;
+}
+
+.regisbox h1 {
+  width: 100%;
+  text-align: center;
+  line-height: 1.2;
+  font-size: 23px;
+  color: #1f2c3e;
+  justify-content: center;
+}
+
+.regisbox p {
+  padding: 30px 10px 30px;
+  width: 100%;
+  text-align: center;
+  line-height: 1.2;
+  font-size: 13px;
+  color: #000;
+  justify-content: center;
+}
+
+/* ---------- REGIS HP ---------- */
+.form-verify {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-verify button {
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(180deg, #1f2f45, #162235);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.form-verify button:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+/* ---------- GAMBAR + JUDUL DESKTOP ---------- */
+@media (min-width: 1024px) {
+  .whitebox {
+    padding: 6%;
+  }
+
+  .regisbox {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "teks1 teks2"
+    "gambar1 form-verify";
+    gap: 40px;
+    padding: 48px;
+
+    align-items: start;
+  }
+
+  .teks1 {
+    grid-area: teks1;
+  }
+
+  .teks2 {
+    grid-area: teks2;
+  }
+
+  .gambar1 {
+    grid-area: gambar1;
+  }
+
+  .regisbox h1 {
+    width: 80%;
+    font-size: 33px;
+    line-height: 1.15;
+    text-align: left;
+  }
+
+  .gambar1 {
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    opacity: 40%;
+  }
+
+  .regisbox p {
+    padding: 0;
+    text-align: left;
+    font-size: 17px;
+  }
+
+  .form-verify {
+    grid-area: form-verify;
+  }
+
+  .form-verify button {
+    font-size: 16px;
+  }
+}

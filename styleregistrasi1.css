@@ -1,0 +1,136 @@
+/* ---------- ALL TYPE ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #1f2f45;
+}
+
+/* ---------- GAMBAR + JUDUL HP ---------- */
+.whitebox {
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.regisbox {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  background: white;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  padding: 24px;
+}
+
+.gambar-1 img {
+  padding: 20px 10px 0px;
+  width: 80%;
+  max-width: 300px;
+  margin-bottom: 16px;
+}
+
+.regisbox h1 {
+  width: 100%;
+  text-align: left;
+  line-height: 1.2;
+  font-size: 23px;
+  color: #1f2c3e;
+  justify-content: center;
+}
+
+/* ---------- REGIS HP ---------- */
+.form-regis {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.form-regis input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: 1px solid #d6dbe1;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.form-regis input:focus {
+  border-color: #1f2f45;
+  box-shadow: 0 0 0 2px rgba(31, 47, 69, 0.1);
+}
+
+.form-regis button {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(180deg, #1f2f45, #162235);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.form-regis button:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+/* ---------- PREVIEW DESKTOP ---------- */
+@media (min-width: 1024px) {
+  .whitebox {
+    padding: 6%;
+  }
+
+  .regisbox {
+    max-width: 900px;
+    display: flex;          
+    flex-direction: row;
+    align-items: flex-start; 
+    gap: 40px;
+    padding: 48px;
+  }
+
+  .gambar-1 {
+    display: block;
+    text-align: left;     /* ⬅ pastikan kiri */
+  }
+
+  .gambar-1 img {
+    width: 50%;
+    max-width: none;
+    margin-bottom: 0;
+  }
+
+  .regisbox h1 {
+    width: 85%;
+    font-size: 33px;
+    line-height: 1.15;
+  }
+
+  .form-regis {
+    max-width: 420px;
+  }
+
+  .form-regis input {
+    font-size: 15px;
+  }
+
+  .form-regis button {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unggah Dokumen</title>
+    <link rel="stylesheet" href="styleregistrasi2.css" />
+  </head>
+
+  <body>
+    <!-- JUDUL FORM -->
+    <div class="whitebox">
+      <div class="regisbox">
+        <div class="layout-grid">
+          <div class="container">
+            <h2>Langkah 1 :<br />Unggah Dokumen</h2>
+          </div>
+
+          <!-- FOTO KTP -->
+          <div class="upload-wrapper">
+            <div class="form-group">
+              <span class="label">Pilih Jenis Identitas</span>
+              <div class="pill-text">KTP / Paspor / SIM</div>
+            </div>
+
+            <div class="upload-box" id="ktpBox">
+              <div class="upload-icon">📷</div>
+              <p>Kotak pemindaian otomatis<br />tentukan foto KTP</p>
+              <input type="file" id="ktpInput" accept="image/*" />
+            </div>
+
+            <img id="ktpPreview" hidden />
+            <small id="ktpError"></small>
+
+            <!-- FOTO SELFIE -->
+            <div class="selfie-box">
+              <div class="circle"></div>
+              <div>
+                <h4>Foto Selfie</h4>
+                <small>(Liveness Detection)</small>
+              </div>
+              <input type="file" />
+            </div>
+            <form class="form-verify">
+              <button type="submit">Kirim Dokumen</button>
+            </form>
+            <p class="note">Data Anda dienkripsi dan sesuai standar BAPPEBTI</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script2.js"></script>
+  </body>
+</html>

@@ -20,6 +20,21 @@
         <form id="form" class="form-regis">
           <input
             type="text"
+            id="nameNik"
+            placeholder="NIK (Nomor Induk Kependudukan)"
+          />
+          <span
+            id="nameNik_error"
+            style="
+              color: red;
+              font-size: 12px;
+              text-align: left;
+              margin-top: -8px;
+            "
+          ></span>
+
+          <input
+            type="text"
             id="nameInput"
             placeholder="Nama Lengkap (Sesuai KTP)"
           />
@@ -71,7 +86,10 @@
             "
           ></span>
 
-          <button type="submit">Daftar Sekarang</button>
+          <button type="submit" class="btn-next">
+  Daftar Sekarang
+</button>
+
         </form>
       </div>
     </div>
